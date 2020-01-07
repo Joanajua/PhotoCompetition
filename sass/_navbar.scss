@@ -1,0 +1,18 @@
+// Partial for the Nav Bar
+
+.navbar {
+  background-color: #DDDDDD;
+  height: 64px;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

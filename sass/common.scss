@@ -1,0 +1,19 @@
+// Import partials
+@import 'index';
+@import 'navbar';
+
+// Global styling
+
+body {
+  margin: 0;
+  background-color: #FFB6C1; // Pick a background colour - don't make it too intense.
+  font-family: Arial, sans-serif; // Pick a font - make sure it's readable!
+  
+}
+
+.main-content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
