@@ -4,8 +4,8 @@
 
 
 
-function loadRandomImage() {
-    fetch(buildUrl('/random'))
+function loadTopRatedImage() {
+    fetch(buildUrl('/top'))
         .then(function (response) {
             if (response.status !== 200) {
                 throw new Error('Request return status code !== 200: ' + response.status + ' - ')
@@ -43,25 +43,6 @@ function loadRandomImage() {
             console.error('Request to /random failed: ', err);
         });
 }
-
-
-
 $(function () {
-    loadRandomImage();
-    $('#voteUp').click(function(){
-        var id = $('#id');
-        fetch(buildUrl('/id/'+ id.text() + '/vote/up'), {method: 'POST'});
-        
-            loadRandomImage();
-    });
-            
-    $('#voteDown').click(function(){
-        var id = $('#id');
-        fetch(buildUrl('/id/'+ id.text() + '/vote/down'), {method: 'POST'});
-            
-            loadRandomImage();
-    });
+    loadTopRatedImage();
 });
-
-
-
