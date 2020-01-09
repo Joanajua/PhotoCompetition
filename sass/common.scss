@@ -1,36 +1,44 @@
+//COLOR Variables
+$color-white: #ffffff;
+$color-yellow:#f0a800;
+$color-blue: #015F6F;
+$color-lighter-blue: #0390a8;
+$color-dark-blue: #01404b;
+$color-pink: #b6325a;
+$color-grey: 	#445252;
+$color-dark-grey: 	#2d3636;
+
 // Import partials
 @import 'index';
 @import 'navbar';
 
-//COLOR Variables
-$color-white: #ffffff;
-$color-yellow:#f0a800;
-$color-blue: #409690;
-$color-grey: 	#445252;
+
 // Global styling
-.background-content {
-  background-image: url("../imgs/background.jpg");
-}
+
 
 body {
   margin: 0;
+  height:100%;
   background-color: $color-white; // Pick a background colour - don't make it too intense.
   font-family: 'Nunito', sans-serif; // Pick a font - make sure it's readable!
+  background-image: url("../imgs/background.jpg");
 }
 
 .main-content {
   width: 100%;
   max-width: 800px;
+  height: 100%;
   margin: 0 auto;
+ 
   padding: 0 2%;
 }
-
 
 h1 {
   font-size: 75px;
   background-color: $color-yellow;
   color: $color-white;
-  
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 img{
   vertical-align: left;
@@ -38,4 +46,12 @@ img{
 }
 table{
   border-spacing: 0px;
+}
+button{
+  border: 0px;
+  font-size: 18px;
+  color: $color-white; 
+}
+a{
+  font-family: 'Nunito', sans-serif;
 }

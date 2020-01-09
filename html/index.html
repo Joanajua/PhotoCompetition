@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <!-- Essential meta tags -->
     <meta charset="utf-8">
@@ -41,25 +41,23 @@
         
         <h1 class="page-title">Photo Competition</h1>
 
-        <div class="image-container">
+        <div class="image-container" role="main" aria-roledescription="Showing an image">
             <!-- src and alt attribute will be populated by index.js on page load -->
             <img id="main-image" src="">
         </div>
         <div class="arrows-container">
-            
-            <div class=arrow-right>
-                <button id="next-photo" class="next-photo-button">Next Photo >>
-
-                </button>
-            </div>
+            <button id="delete-photo" name="delete photo" role="button" aria-roledescription="delete this picture" class="next-photo-button">Delete Photo
+            </button>
+            <button id="next-photo" name="next photo button" role="button" aria-roledescription="go to next picture" class="next-photo-button">Next Photo >>
+            </button>
         </div>
         <div class="voting-buttons">
-            <button id="voteUp" class="voting-button vote-up">I love it</button>
-            <button id="voteDown" class="voting-button vote-down">I hate it</button>
+            <button id="voteUp" name="I like it" role="button" aria-roledescription="I love it" class="voting-button vote-up">I love it</button>
+            <button id="voteDown" name="I hate it" role="button" aria-roledescription="I hate it" class="voting-button vote-down">I hate it</button>
             
         </div>
 
-        <div class="image-details">
+        <div class="image-details" role="complementary" aria-roledescription="Image details">
             <table class="table">
                 <tbody>
                     <tr>

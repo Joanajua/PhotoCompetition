@@ -44,25 +44,49 @@ function loadRandomImage() {
         });
 }
 
+//Delete Pictures
+
+function deleteImage() {
+    var username = prompt("User name:");
+    var password = prompt("password:");
+    var id = $('#id');
+    fetch(buildUrl('/id/'+ id.text()), {
+        method: 'DELETE',
+        headers: {"Authorization" : "Basic " + btoa(username + ":" + password)}})
+
+}
+
 
 
 $(function () {
     loadRandomImage();
+
+    //VOTE UP BUTTOM
     $('#voteUp').click(function(){
         var id = $('#id');
         fetch(buildUrl('/id/'+ id.text() + '/vote/up'), {method: 'POST'});
         
             loadRandomImage();
     });
-            
+    
+    //VOTE DOWN BUTTOM
     $('#voteDown').click(function(){
         var id = $('#id');
         fetch(buildUrl('/id/'+ id.text() + '/vote/down'), {method: 'POST'});
             
             loadRandomImage();
     });
+
+    //NEXT PHOTO BUTTOM
     $('#next-photo').click(function(){
         loadRandomImage();
+    });
+
+
+    //DELETE PHOTO BUTTOM
+    $('#delete-photo').click(function(){
+        deleteImage();
+        
     });
 });
 

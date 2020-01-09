@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 <head>
     <!-- Essential meta tags -->
     <meta charset="utf-8">
@@ -39,18 +39,18 @@
         <div class="main-content">
         
             <h1 class="page-title">Upload an Image</h1>
-            <div class=form-container>
+            <div class="form-container">
             
                 <form action="" id="form" name="form">
                     Image title:<br>
-                    <input type="text" name="title" value="Image title" id ="title"><br>
+                    <input type="text" name="title" value="Image title" id ="title"  placeholder="Title" maxlength="100" required autofocus tabindex="1"><br>
                     Author:<br>
-                    <input type="text" name="author" value="Author" id="author"><br><br>
+                    <input type="text" name="author" value="Author" id="author" placeholder="Author" maxlength="50" required tabindex="2"><br><br>
                     License:<br>
-                    <input type="text" name="license" value="License number" id="license"><br><br>
+                    <input type="text" name="license" value="License number" id="license" placeholder="License" maxlength="20" required tabindex="3"><br><br>
                     File:<br>
-                    <input type="text" name="file" value="Upload your file" ><br><br>
-                    <input type="file" value="Select File" id="file">
+                   
+                    <input type="file" value="Select File" id="file" required>
                     <input type="submit" value="Upload" id="upload-image">
 
                 </form>

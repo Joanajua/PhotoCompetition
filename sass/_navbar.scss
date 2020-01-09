@@ -1,30 +1,42 @@
 // Partial for the Nav Bar
 
 //COLOR Variables
-$color-white: #ffffff;
-$color-yellow:#f0a800;
-$color-blue: #409690;
-$color-grey: 	#445252;
+
 
 .navbar {
   margin: 0 auto;
-  
-  max-width: 800px;
-  height: 50px;
+  margin-bottom: 0px;
+  max-width: 760px;
+  height: 75px;
   background-color: $color-white;
   align-self: center;
   display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .navbar-list {
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+    font-size: 20px;
+  }
+  .navbar-title{
+    color: $color-lighter-blue;
+    font-size: 30px;
+      
+  }
+  a{
+    color: $color-pink;
+  }
+  a:hover{
+    color: $color-yellow;
+  }
+
 }
 
-.navbar-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  height: 100%;
-  margin: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  list-style: none;
-}
