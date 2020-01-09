@@ -1,20 +1,100 @@
 // Partial for the Index page
+//COLOR Variables
+$color-white: #ffffff;
+$color-yellow:#f0a800;
+$color-blue: #015F6F;
+$color-dark-blue: #01404b;
+$color-grey: 	#445252;
+$color-dark-grey: 	#2d3636;
 
-.image-container, #main-image {
-  width: 100%;
+
+.arrows-container{
+  max-width: 800px;
+  align-items: right;
+  padding-bottom: 15px;
+  background-color: $color-white;
 }
 
+.arrow-right{
+  
+  font-size: 15px;
+  display: block;
+  width: 200px;
+  margin-left: 600px;
+  align-content: right;
+}
+.form-container{
+  display: block;
+  float: left;
+  max-width: 750px;
+  background-color: $color-white;
+  align-self: center;
+}
+.image-container{
+  
+  display: block;
+  float: left;
+  max-width: 750px;
+  background-color: $color-white;
+}
+ #main-image {
+  
+  max-width: 750px;
+  height: auto;
+  background-color: $color-white;
+  align-content: center;
+  align-self: center;
+  padding: 3%;
+}
+
+.next-photo-button {
+  width: 150px;
+  padding: 8px;
+  margin: 0 8px;
+  background-color: $color-grey;
+}
+.next-photo-button:hover{
+  width: 150px;
+  padding: 8px;
+  margin: 0 8px;
+  background-color: $color-dark-grey;
+}
 .voting-buttons {
   display: flex;
   justify-content: center;
+  margin-top:10px;
   padding: 8px;
+  
 
   .voting-button {
+    width: 100px;
     padding: 8px;
     margin: 0 8px;
+    background-color: $color-blue;
+  }
+  .voting-button:hover{
+    width: 100px;
+    padding: 8px;
+    margin: 0 8px;
+    background-color: $color-dark-blue;
   }
 }
 
 .image-details {
-  width: 100%;
+  display: block;
+  max-width: 800px;
+  background-color: $color-white;
+  margin-top: 20px;
+  color: $color-grey;
+  
+}
+.image-details table{
+  padding-left: 50px ;
+}
+button{
+
+  border: 0px;
+  font-size: 18px;
+  color: $color-white;
+  
 }

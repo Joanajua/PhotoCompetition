@@ -8,7 +8,7 @@
     <meta name="author" content="Softwire">
 
     <!-- Title -->
-    <title>Photo Competition - Top Rated</title>
+    <title>Top Rated Photo</title>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../stylesheets/common.css">
@@ -18,55 +18,62 @@
 
     <!-- Custom JS -->
     <script src="../js/common.js"></script>
+    <script src="../js/index.js"></script>
     <script src="../js/toprated.js"></script>
+
+    <!-- Nunito FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<div class="background-content">
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
+            
+            <li class="navbar-item"><a class="navbar-link" href="upload.html">Upload an Image</a></li>
+        </ul>
+    </nav>
 
-<!-- Navigation bar -->
-<nav class="navbar main-content">
-    <ul class="navbar-list">
-        <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
+    <!-- Page content -->
+    <div class="main-content">
         
-    </ul>
-</nav>
+        <h1 class="page-title">Top Rated</h1>
 
-<!-- Page content -->
-<div class="main-content">
-    <h1 class="page-title">Top Rated Picture</h1>
-
-    <div class="image-container">
-        <!-- src and alt attribute will be populated by index.js on page load -->
-        <img id="main-image" src="">
+        <div class="image-container">
+            <!-- src and alt attribute will be populated by index.js on page load -->
+            <img id="main-image" src="">
+        </div>
+        
+        <div class="image-details">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td><b>Author</b></td>
+                        <td id="author">dfasdfasdfasdfafsd</td>
+                    </tr>
+                    <tr>
+                        <td><b>Name</b></td>
+                        <td id="name">TODO: Fill in image details.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Licence</b></td>
+                        <td id="license">TODO: Fill in licence details.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Id</b></td>
+                        <td id="id">TODO: Fill in licence details.</td>
+                    </tr>
+                    <tr>
+                        <td><b>Votes</b></td>
+                        <td id="votes">0</td>
+                    </tr>
+                </tbody>
+        </table>
+        </div>
     </div>
-
-   
-
-    <table class="image-details">
-        <tbody>
-            <tr>
-                <td><b>Author</b></td>
-                <td id="author">dfasdfasdfasdfafsd</td>
-            </tr>
-            <tr>
-                <td><b>Name</b></td>
-                <td id="name">TODO: Fill in image details.</td>
-            </tr>
-            <tr>
-                <td><b>Licence</b></td>
-                <td id="license">TODO: Fill in licence details.</td>
-            </tr>
-            <tr>
-                <td><b>Id</b></td>
-                <td id="id">TODO: Fill in licence details.</td>
-            </tr>
-            <tr>
-                <td><b>Votes</b></td>
-                <td id="votes">0</td>
-            </tr>
-        </tbody>
-    </table>
 </div>
-
 </body>
+
 </html>

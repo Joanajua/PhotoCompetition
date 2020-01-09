@@ -1,8 +1,19 @@
 // Partial for the Nav Bar
 
+//COLOR Variables
+$color-white: #ffffff;
+$color-yellow:#f0a800;
+$color-blue: #409690;
+$color-grey: 	#445252;
+
 .navbar {
-  background-color: #DDDDDD;
-  height: 64px;
+  margin: 0 auto;
+  
+  max-width: 800px;
+  height: 50px;
+  background-color: $color-white;
+  align-self: center;
+  display: block;
 }
 
 .navbar-list {
@@ -12,7 +23,8 @@
 
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
 
   list-style: none;
 }

@@ -61,7 +61,13 @@ $(function () {
             
             loadRandomImage();
     });
+    $('#next-photo').click(function(){
+        loadRandomImage();
+    });
 });
+
+
+
 
 
 

@@ -2,18 +2,40 @@
 @import 'index';
 @import 'navbar';
 
+//COLOR Variables
+$color-white: #ffffff;
+$color-yellow:#f0a800;
+$color-blue: #409690;
+$color-grey: 	#445252;
 // Global styling
+.background-content {
+  background-image: url("../imgs/background.jpg");
+}
 
 body {
   margin: 0;
-  background-color: #FFB6C1; // Pick a background colour - don't make it too intense.
-  font-family: Arial, sans-serif; // Pick a font - make sure it's readable!
-  
+  background-color: $color-white; // Pick a background colour - don't make it too intense.
+  font-family: 'Nunito', sans-serif; // Pick a font - make sure it's readable!
 }
 
 .main-content {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 2%;
+}
+
+
+h1 {
+  font-size: 75px;
+  background-color: $color-yellow;
+  color: $color-white;
+  
+}
+img{
+  vertical-align: left;
+  max-width: 700px;
+}
+table{
+  border-spacing: 0px;
 }

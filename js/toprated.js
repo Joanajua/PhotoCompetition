@@ -44,5 +44,7 @@ function loadTopRatedImage() {
         });
 }
 $(function () {
-    loadTopRatedImage();
+    $('#toprated').click(function(){
+        loadtopRatedImage();
+    });
 });
