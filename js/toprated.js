@@ -13,7 +13,7 @@ function loadTopRatedImage() {
             return response.json();
         })
         .then(function (json) {
-            console.log('Request to /random succeeded: ');
+            console.log('Request to get the top rated image succeeded: ');
             console.log(json);
             
 
@@ -40,11 +40,11 @@ function loadTopRatedImage() {
 
         })
         .catch(function (err) {
-            console.error('Request to /random failed: ', err);
+            console.error('Request to get the top rated image failed: ', err);
         });
 }
 $(function () {
-    $('#toprated').click(function(){
-        loadtopRatedImage();
-    });
+    
+        loadTopRatedImage();
+    
 });
